@@ -1,0 +1,31 @@
+@url = http://localhost:4004
+# Manage Books 
+
+### Insert Books 
+POST {{url}}/admin/Books
+Content-Type: application/json
+
+{
+    "title": "Harry potter",
+    "description": "Hermoine and two idiots",
+    "isbn": "12232-2327",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "price": "599"
+}
+
+### Get Books list 
+GET {{url}}/admin/Books
+
+
+### Delete Books 
+DELETE {{url}}/admin/Books(9fe1f649-e020-4874-a42e-e05edccd3973)
+
+### Action to update stock 
+POST {{url}}/admin/setStock
+Content-Type: application/json
+
+{
+}
+
+
+# Authors Entity 

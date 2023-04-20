@@ -1,0 +1,11 @@
+node_modules/
+.gen/
+dist/
+edmx/
+gen/
+mta_archives/
+
+*.log
+*.mtar
+default-env.json
+.cdsrc-private.json

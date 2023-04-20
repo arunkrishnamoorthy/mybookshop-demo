@@ -1,0 +1,36 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@aarini/common": "file:../common",
+    "@aarini/products": "file:../products",
+    "@aarini/reviews": "file:../reviews",
+    "@sap/cds": "^6",
+    "express": "^4",
+    "hdb": "^0.19.0"
+  },
+  "devDependencies": {
+    "sqlite3": "^5"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "ReviewsService": {
+        "kind": "odata",
+        "model": "@aarini/reviews"
+      },
+      "db": {
+        "kind": "hana-cloud"
+      }
+    }
+  },
+  "log": {
+    "service": true
+  }
+}
