@@ -14,6 +14,7 @@
   "author": "Arun Krishnamoorthy",
   "license": "ISC",
   "dependencies": {
+    "@aarini/reviews": "^1.0.0",
     "@sap/cds": "^6.7.1"
   }
 }
