@@ -1,0 +1,10 @@
+@url = http://localhost:4004
+
+### Create Order
+POST {{url}}/orders/Orders 
+Content-Type: application/json
+
+{
+    "OrderNumber": "123232",
+    "buyer": "ABC"
+}

@@ -1,0 +1,14 @@
+# Insert Review 
+@url = http://localhost:4005
+
+###
+POST {{url}}/reviews/Reviews
+Content-Type: application/json
+
+{
+    "subject": "Test Subject",
+    "reviewer": "AKR",
+    "rating": 4,
+    "title": "Hello",
+    "text": "Dummy Text"
+}

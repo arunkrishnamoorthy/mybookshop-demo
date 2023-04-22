@@ -4,17 +4,21 @@
   "description": "My Bookshop demo practice application",
   "main": "index.js",
   "scripts": {
+    "products": "cds watch products --profile hybrid",
+    "reviews":  "cds watch reviews --profile hybrid",
+    "bookstore": "cds watch bookstore --profile hybrid",
+    "orders": "cds watch orders --profile hybrid",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "workspaces": [
     "./common",
     "./products",
-    "./reviews"
+    "./reviews",
+    "./orders"
   ],
   "author": "Arun Krishnamoorthy",
   "license": "ISC",
   "dependencies": {
-    "@aarini/reviews": "^1.0.0",
     "@sap/cds": "^6.7.1"
   }
 }

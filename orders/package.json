@@ -1,21 +1,12 @@
 {
-  "name": "@aarini/bookstore",
+  "name": "@aarini/orders",
   "version": "1.0.0",
   "description": "A simple CAP project.",
   "repository": "<Add your repository here>",
   "license": "UNLICENSED",
   "private": true,
-  "workspaces": [
-    "../reviews",
-    "../products",
-    "../common",
-    "../orders"
-  ],
   "dependencies": {
     "@aarini/common": "^1.0.0",
-    "@aarini/orders": "^1.0.0",
-    "@aarini/products": "^1.0.0",
-    "@aarini/reviews": "^1.0.0",
     "@sap/cds": "^6",
     "express": "^4",
     "hdb": "^0.19.0"
@@ -24,20 +15,13 @@
     "sqlite3": "^5"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds serve"
   },
   "cds": {
     "requires": {
-      "ReviewsService": {
-        "kind": "odata",
-        "model": "@aarini/reviews"
-      },
       "db": {
-        "kind": "sql"
+        "kind": "hana-cloud"
       }
     }
-  },
-  "log": {
-    "service": true
   }
 }

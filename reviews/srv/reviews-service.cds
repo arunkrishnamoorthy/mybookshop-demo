@@ -23,14 +23,14 @@ service ReviewsService {
 }
 
 // Service level annotations 
-annotate ReviewsService.Reviews with @restrict: [
-    { grant: 'READ', to: 'any'},
-    { grant: 'CREATE', to: 'authenticated-user'},
-    { grant: 'UPDATE', to: 'authenticated-user', where: 'reviewer=$user'},
-    { grant: 'DELETE', to: 'admin'}
-];
+// annotate ReviewsService.Reviews with @restrict: [
+//     { grant: 'READ', to: 'any'},
+//     { grant: 'CREATE', to: 'authenticated-user'},
+//     { grant: 'UPDATE', to: 'authenticated-user', where: 'reviewer=$user'},
+//     { grant: 'DELETE', to: 'admin'}
+// ];
 
-annotate ReviewsService with @restrict: [
-    { grant:'like',to:'identified-user'},
-    { grant:'unlike', to: 'identified-user',where: 'user=$user'}
-];
+// annotate ReviewsService with @restrict: [
+//     { grant:'like',to:'identified-user'},
+//     { grant:'unlike', to: 'identified-user',where: 'user=$user'}
+// ];
